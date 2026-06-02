@@ -77,7 +77,7 @@ export function LanguageSwitcher({ className }: Props) {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -6, scale: 0.96 }}
             transition={{ duration: 0.15, ease: "easeOut" }}
-            className="absolute right-0 top-12 z-50 w-44 overflow-hidden rounded-2xl border border-border bg-surface p-1.5 shadow-[var(--shadow-card-hover)]"
+            className="absolute left-0 top-12 z-50 w-44 overflow-hidden rounded-2xl border border-border bg-surface p-1.5 shadow-[var(--shadow-card-hover)] sm:left-auto sm:right-0"
           >
             {LOCALES.map((l) => {
               const active = l.code === locale;
