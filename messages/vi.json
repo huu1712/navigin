@@ -1,0 +1,711 @@
+{
+  "meta": {
+    "name": "Navigin",
+    "tagline": "Freelance Web & App Developer",
+    "fullName": "Navigin — Web & App Developer",
+    "siteUrl": "https://navigin.dev"
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "services": "Dịch vụ",
+    "pricing": "Báo giá",
+    "about": "Giới thiệu",
+    "contact": "Liên hệ",
+    "hireMe": "Hợp tác cùng chúng tôi",
+    "openMenu": "Mở menu",
+    "closeMenu": "Đóng menu",
+    "toggleTheme": "Chuyển giao diện",
+    "language": "Ngôn ngữ"
+  },
+  "common": {
+    "learnMore": "Tìm hiểu thêm",
+    "viewAll": "Xem tất cả",
+    "getStarted": "Bắt đầu ngay",
+    "contactMe": "Liên hệ ngay",
+    "viewServices": "Xem dịch vụ",
+    "scrollDown": "Cuộn xuống",
+    "from": "Từ",
+    "timeline": "Thời gian",
+    "techStack": "Công nghệ",
+    "includes": "Bao gồm",
+    "popular": "Phổ biến nhất",
+    "comingSoon": "Sắp ra mắt"
+  },
+  "badges": {
+    "available": "Đang nhận dự án",
+    "fullyBooked": "Hết slot trong tháng này",
+    "responseTime": "Phản hồi trong 24h"
+  },
+  "hero": {
+    "title": "Chúng tôi xây dựng Website & App cho doanh nghiệp của bạn",
+    "titleAccent": "doanh nghiệp",
+    "subtitle": "Navigin là product studio với đội ngũ senior 100% — chúng tôi biến ý tưởng của bạn thành sản phẩm số đẹp, nhanh và đáng tin cậy.",
+    "ctaPrimary": "Xem dịch vụ",
+    "ctaSecondary": "Liên hệ ngay",
+    "available": "Đang nhận dự án"
+  },
+  "stats": {
+    "title": "Con số biết nói",
+    "subtitle": "Niềm tin được xây dựng qua từng dự án",
+    "projects": "Dự án đã triển khai",
+    "specialists": "Chuyên gia senior",
+    "countries": "Quốc gia phục vụ",
+    "response": "Thời gian phản hồi TB"
+  },
+  "servicesTeaser": {
+    "eyebrow": "Dịch vụ",
+    "title": "Chúng tôi có thể làm gì cho bạn?",
+    "subtitle": "Từ ý tưởng đầu tiên đến sản phẩm vận hành ổn định — đội ngũ đồng hành cùng bạn ở mọi giai đoạn.",
+    "viewAll": "Xem tất cả dịch vụ",
+    "items": {
+      "web": {
+        "title": "Phát triển Website",
+        "desc": "Landing page, website doanh nghiệp, thương mại điện tử — thiết kế chuyên nghiệp, tối ưu SEO, tải nhanh."
+      },
+      "mobile": {
+        "title": "Ứng dụng di động",
+        "desc": "iOS & Android dùng chung một codebase với React Native — tiết kiệm thời gian, đồng nhất trải nghiệm."
+      },
+      "webapp": {
+        "title": "Web App / SaaS",
+        "desc": "Dashboard, admin panel, công cụ nội bộ, MVP cho startup — kiến trúc vững chắc, mở rộng dễ dàng."
+      }
+    }
+  },
+  "projects": {
+    "eyebrow": "Dự án",
+    "title": "Dự án nổi bật",
+    "subtitle": "Một vài sản phẩm chúng tôi đã triển khai cho khách hàng trong và ngoài nước.",
+    "viewLive": "Xem website",
+    "items": {
+      "mit": {
+        "desc": "Website doanh nghiệp cho Mijuit IT — công ty phần mềm Hàn Quốc. Layout marketing tinh gọn xây trên Angular, routing mượt và trải nghiệm responsive trên mọi thiết bị."
+      },
+      "order": {
+        "desc": "Nền tảng ERP & quản lý đơn hàng quy mô lớn cho đội phân phối của Mijuit. Reactive Forms, đồng bộ tồn kho realtime, phân quyền đa cấp, dashboard Chart.js và in hoá đơn."
+      },
+      "mood": {
+        "desc": "Dashboard admin và storefront cho thương hiệu trà sữa Trân Châu Tươi Mood. CRUD đầy đủ catalog sản phẩm, tồn kho realtime, lịch sử đơn hàng có filter và phân trang."
+      },
+      "chamwoodon": {
+        "desc": "Website thương mại điện tử cho thương hiệu rượu ủ gỗ Hàn Quốc. UI tái sử dụng, flow điều hướng dựa trên Angular Router và quy trình checkout chỉ 3 bước."
+      },
+      "datsan": {
+        "desc": "Nền tảng đặt sân thể thao tại Việt Nam. Lịch trống realtime, phân quyền đa vai trò và dashboard quản trị xây trên Next.js + TypeScript."
+      },
+      "hanroyal": {
+        "desc": "Website thương mại điện tử cho thương hiệu thịt cao cấp HAN Royal (Hàn Quốc). UI tái sử dụng, flow Angular Router và checkout 3 bước nhanh gọn."
+      }
+    }
+  },
+  "tech": {
+    "eyebrow": "Công nghệ",
+    "title": "Công nghệ sử dụng",
+    "subtitle": "Bộ công cụ hiện đại để xây dựng sản phẩm nhanh và bền vững."
+  },
+  "testimonials": {
+    "eyebrow": "Phản hồi",
+    "title": "Khách hàng nói gì?",
+    "subtitle": "Sự hài lòng của khách hàng là động lực lớn nhất.",
+    "items": {
+      "one": {
+        "name": "Trần Minh Hằng",
+        "role": "Founder, Lumen Studio",
+        "quote": "Sản phẩm vượt kỳ vọng. Code sạch, giao diện đẹp, và quan trọng nhất là giao đúng hẹn. Sẽ tiếp tục hợp tác cho các dự án sau."
+      },
+      "two": {
+        "name": "James Carter",
+        "role": "CTO, Trailhead Inc.",
+        "quote": "Working with him was a pleasure — proactive communication, deep technical knowledge, and a real eye for UX. Highly recommended."
+      },
+      "three": {
+        "name": "Nguyễn Quốc Bảo",
+        "role": "CEO, Northwind Group",
+        "quote": "Hiểu nhu cầu doanh nghiệp nhanh chóng, đề xuất giải pháp hợp lý. Dashboard CRM đã giúp team chúng tôi tiết kiệm hàng chục giờ mỗi tuần."
+      }
+    }
+  },
+  "ctaBanner": {
+    "title": "Sẵn sàng bắt đầu dự án?",
+    "subtitle": "Hãy chia sẻ ý tưởng của bạn. Chúng tôi sẽ phản hồi với đề xuất sơ bộ trong vòng 24 giờ.",
+    "button": "Liên hệ ngay"
+  },
+  "footer": {
+    "tagline": "Xây dựng sản phẩm số đẹp, nhanh và đáng tin cậy.",
+    "navigation": "Điều hướng",
+    "servicesCol": "Dịch vụ",
+    "contactCol": "Liên hệ",
+    "builtWith": "Xây dựng với",
+    "rights": "Bảo lưu mọi quyền.",
+    "responseTime": "Phản hồi trong vòng 24 giờ",
+    "location": "TP. Hồ Chí Minh, Việt Nam"
+  },
+  "services": {
+    "hero": {
+      "eyebrow": "Dịch vụ",
+      "title": "Dịch vụ phát triển chuyên nghiệp",
+      "subtitle": "Chúng tôi cung cấp ba nhóm dịch vụ cốt lõi, mỗi nhóm được thiết kế để mang lại giá trị thực sự cho doanh nghiệp của bạn.",
+      "breadcrumbHome": "Trang chủ",
+      "breadcrumbCurrent": "Dịch vụ"
+    },
+    "items": {
+      "web": {
+        "name": "Phát triển Website",
+        "tagline": "Landing page · Doanh nghiệp · Thương mại điện tử",
+        "description": "Xây dựng website chuyên nghiệp từ landing page đến nền tảng thương mại điện tử phức tạp. Mọi website đều được tối ưu cho SEO, tốc độ tải và trải nghiệm trên mọi thiết bị.",
+        "includes": [
+          "Thiết kế responsive cho desktop, tablet, mobile",
+          "Tối ưu SEO cơ bản (meta tags, sitemap, schema)",
+          "Tích hợp CMS để bạn tự cập nhật nội dung",
+          "Deploy lên Vercel / Netlify / cPanel",
+          "Phân tích Google Analytics & Search Console",
+          "Hỗ trợ 30 ngày sau khi bàn giao"
+        ],
+        "techList": ["Next.js", "WordPress", "Shopify", "Tailwind CSS", "Vercel"],
+        "timeline": "1 – 4 tuần",
+        "priceFrom": "$500",
+        "cta": "Yêu cầu dịch vụ này"
+      },
+      "mobile": {
+        "name": "Ứng dụng di động",
+        "tagline": "Cross-platform · iOS · Android",
+        "description": "Phát triển ứng dụng di động cho cả iOS và Android dùng chung một codebase với React Native — tiết kiệm 50% chi phí và thời gian so với native riêng biệt.",
+        "includes": [
+          "Thiết kế UI/UX phù hợp brand",
+          "Tích hợp API REST/GraphQL",
+          "Push notifications (FCM/APNs)",
+          "Authentication & quản lý tài khoản",
+          "Submission lên App Store & Google Play",
+          "Hỗ trợ phát hành bản cập nhật OTA"
+        ],
+        "techList": ["React Native", "Expo", "Firebase", "REST/GraphQL"],
+        "timeline": "4 – 12 tuần",
+        "priceFrom": "$2,000",
+        "cta": "Yêu cầu dịch vụ này"
+      },
+      "webapp": {
+        "name": "Web Application / SaaS",
+        "tagline": "Dashboard · Admin Panel · SaaS MVP",
+        "description": "Xây dựng web app phức tạp: hệ thống CRM, dashboard quản trị, công cụ nội bộ, MVP cho startup. Kiến trúc vững chắc, dễ mở rộng khi doanh nghiệp lớn lên.",
+        "includes": [
+          "Hệ thống auth & phân quyền nhiều vai trò",
+          "Thiết kế database & API",
+          "Dashboard analytics realtime",
+          "Tích hợp thanh toán (Stripe/VNPAY)",
+          "Triển khai Docker & CI/CD",
+          "Tài liệu kỹ thuật đầy đủ"
+        ],
+        "techList": ["Next.js", "Node.js", "PostgreSQL", "Prisma", "Docker", "AWS"],
+        "timeline": "6 – 16 tuần",
+        "priceFrom": "$3,000",
+        "cta": "Yêu cầu dịch vụ này"
+      }
+    },
+    "process": {
+      "eyebrow": "Quy trình",
+      "title": "Quy trình làm việc",
+      "subtitle": "Một quy trình minh bạch 5 bước — bạn luôn biết dự án đang ở đâu.",
+      "steps": {
+        "one": { "title": "Trao đổi yêu cầu", "desc": "Cuộc gọi 30 phút để hiểu rõ mục tiêu, scope và mong đợi." },
+        "two": { "title": "Báo giá & hợp đồng", "desc": "Đề xuất giải pháp chi tiết kèm timeline & ngân sách rõ ràng." },
+        "three": { "title": "Thiết kế UI/UX", "desc": "Wireframe, mockup, prototype tương tác trước khi code." },
+        "four": { "title": "Phát triển", "desc": "Sprint 1–2 tuần với demo định kỳ để bạn theo dõi tiến độ." },
+        "five": { "title": "Bàn giao & hỗ trợ", "desc": "Deploy, training và hỗ trợ kỹ thuật 30 ngày sau bàn giao." }
+      }
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Câu hỏi thường gặp",
+      "subtitle": "Vẫn còn thắc mắc? Hãy liên hệ trực tiếp.",
+      "items": {
+        "one": {
+          "q": "Tôi có thể yêu cầu chỉnh sửa thiết kế không?",
+          "a": "Hoàn toàn được. Mỗi giai đoạn (wireframe, mockup, prototype) đều có vòng review và bạn có thể yêu cầu chỉnh sửa cho đến khi ưng ý với đội ngũ."
+        },
+        "two": {
+          "q": "Sau khi bàn giao, ai sở hữu source code?",
+          "a": "100% source code thuộc về bạn. Chúng tôi sẽ chuyển toàn bộ repository, tài khoản hosting, và tài liệu kỹ thuật cho bạn."
+        },
+        "three": {
+          "q": "Có hỗ trợ sau khi bàn giao không?",
+          "a": "Có. Mọi gói đều bao gồm 30 ngày hỗ trợ miễn phí cho các lỗi phát sinh. Sau đó, có gói bảo trì hàng tháng nếu bạn cần."
+        },
+        "four": {
+          "q": "Tôi có thể thuê team theo giờ không?",
+          "a": "Có, với mức $35–60/giờ tuỳ độ phức tạp và vai trò. Tuy nhiên, dự án trọn gói thường tiết kiệm hơn cho bạn."
+        },
+        "five": {
+          "q": "Bạn có ký NDA không?",
+          "a": "Sẵn sàng. Chúng tôi sẽ ký NDA trước khi bắt đầu trao đổi chi tiết dự án nếu bạn yêu cầu."
+        }
+      }
+    }
+  },
+  "pricing": {
+    "hero": {
+      "eyebrow": "Báo giá",
+      "title": "Bảng giá minh bạch",
+      "subtitle": "Giá rõ ràng, không phát sinh ẩn. Mọi gói đều bao gồm hỗ trợ sau bàn giao và tài liệu đầy đủ."
+    },
+    "toggle": {
+      "web": "Website",
+      "mobile": "Ứng dụng di động",
+      "webapp": "Web App"
+    },
+    "tiers": {
+      "popular": "Phổ biến nhất",
+      "custom": "Liên hệ",
+      "perProject": "/ dự án",
+      "getStarted": "Bắt đầu"
+    },
+    "web": {
+      "starter": {
+        "name": "Starter",
+        "desc": "Cho doanh nghiệp mới ra mắt cần một landing page chuyên nghiệp.",
+        "price": "$500",
+        "features": [
+          "Landing page 1 trang",
+          "Tối đa 5 sections",
+          "Responsive mọi thiết bị",
+          "SEO cơ bản",
+          "1 vòng chỉnh sửa",
+          "Bàn giao trong 1–2 tuần"
+        ]
+      },
+      "business": {
+        "name": "Business",
+        "desc": "Lựa chọn phổ biến nhất cho website doanh nghiệp đa trang.",
+        "price": "$1,200",
+        "features": [
+          "Lên đến 10 trang",
+          "Tích hợp CMS (Sanity/Strapi)",
+          "Form liên hệ & email automation",
+          "Google Analytics & SEO nâng cao",
+          "3 vòng chỉnh sửa",
+          "Bàn giao trong 2–4 tuần"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "desc": "Cho thương mại điện tử và website tuỳ chỉnh phức tạp.",
+        "price": "Liên hệ",
+        "features": [
+          "Thương mại điện tử (Shopify/custom)",
+          "Tích hợp ERP/CRM",
+          "Đa ngôn ngữ & đa tiền tệ",
+          "Hỗ trợ ưu tiên 24/7",
+          "Không giới hạn chỉnh sửa",
+          "SLA cam kết uptime"
+        ]
+      }
+    },
+    "mobile": {
+      "starter": {
+        "name": "MVP",
+        "desc": "Phiên bản đầu tiên để xác thực ý tưởng và gọi vốn.",
+        "price": "$2,000",
+        "features": [
+          "Tính năng cốt lõi",
+          "iOS & Android",
+          "Auth cơ bản (email/social)",
+          "Tối đa 8 màn hình",
+          "Triển khai TestFlight & Internal Testing",
+          "Bàn giao trong 4–6 tuần"
+        ]
+      },
+      "business": {
+        "name": "Standard",
+        "desc": "App hoàn chỉnh sẵn sàng đẩy lên store.",
+        "price": "$4,500",
+        "features": [
+          "Toàn bộ tính năng",
+          "Push notifications",
+          "Tích hợp thanh toán",
+          "Admin panel quản lý",
+          "Đăng ký App Store & Play Store",
+          "Bàn giao trong 8–12 tuần"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "desc": "Kiến trúc tuỳ chỉnh cho app quy mô lớn.",
+        "price": "Liên hệ",
+        "features": [
+          "Kiến trúc microservices",
+          "CI/CD tự động",
+          "Analytics nâng cao",
+          "Hỗ trợ liên tục",
+          "Tích hợp hệ thống nội bộ",
+          "SLA & dedicated support"
+        ]
+      }
+    },
+    "webapp": {
+      "starter": {
+        "name": "Starter",
+        "desc": "Cho dashboard nội bộ hoặc công cụ đơn giản.",
+        "price": "$3,000",
+        "features": [
+          "Auth & phân quyền",
+          "Dashboard với biểu đồ",
+          "CRUD đầy đủ",
+          "REST API",
+          "Triển khai production",
+          "Bàn giao trong 6–8 tuần"
+        ]
+      },
+      "business": {
+        "name": "Growth",
+        "desc": "SaaS sẵn sàng kinh doanh với khách hàng thật.",
+        "price": "$6,000",
+        "features": [
+          "Multi-tenant, phân vai trò",
+          "Tích hợp thanh toán Stripe",
+          "Email & notification system",
+          "Analytics & reporting",
+          "Docker & CI/CD",
+          "Bàn giao trong 10–14 tuần"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "desc": "Hạ tầng tuỳ chỉnh cho SaaS quy mô lớn.",
+        "price": "Liên hệ",
+        "features": [
+          "Microservices architecture",
+          "Hạ tầng AWS/GCP tuỳ chỉnh",
+          "SLA cam kết uptime 99.9%",
+          "Dedicated support",
+          "Bảo mật nâng cao",
+          "Đào tạo team nội bộ"
+        ]
+      }
+    },
+    "included": {
+      "eyebrow": "Luôn bao gồm",
+      "title": "Điều luôn có trong mọi gói",
+      "subtitle": "Bất kể bạn chọn gói nào, những điều cốt lõi sau luôn được đảm bảo.",
+      "items": {
+        "git": { "title": "Quản lý phiên bản Git", "desc": "Code được commit minh bạch, bạn có quyền truy cập repo." },
+        "test": { "title": "Kiểm thử kỹ lưỡng", "desc": "Test thủ công đa thiết bị + unit test cho logic quan trọng." },
+        "docs": { "title": "Tài liệu đầy đủ", "desc": "Hướng dẫn vận hành, deploy và onboarding cho team mới." },
+        "support": { "title": "Hỗ trợ 30 ngày", "desc": "Sửa lỗi miễn phí trong 30 ngày sau khi bàn giao chính thức." },
+        "nda": { "title": "NDA sẵn sàng", "desc": "Đội ngũ ký NDA trước khi trao đổi chi tiết nếu bạn yêu cầu." },
+        "lang": { "title": "Song ngữ Việt – Anh", "desc": "Trao đổi và tài liệu bằng ngôn ngữ bạn thoải mái nhất." }
+      }
+    },
+    "payment": {
+      "eyebrow": "Thanh toán",
+      "title": "Điều khoản thanh toán",
+      "subtitle": "Đơn giản, công bằng và minh bạch cho cả hai bên.",
+      "terms": {
+        "upfront": { "title": "50% tạm ứng", "desc": "Sau khi ký hợp đồng, để bắt đầu thiết kế và phát triển." },
+        "delivery": { "title": "50% khi bàn giao", "desc": "Trước khi triển khai production và chuyển source code." }
+      },
+      "methods": {
+        "title": "Phương thức chấp nhận",
+        "bank": "Chuyển khoản ngân hàng",
+        "paypal": "PayPal",
+        "wise": "Wise",
+        "crypto": "USDT (tuỳ chọn)"
+      }
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Thắc mắc về báo giá",
+      "items": {
+        "one": {
+          "q": "Tôi có được hoàn tiền nếu không hài lòng?",
+          "a": "Có. Trong 7 ngày đầu tiên sau khi bắt đầu, bạn có thể yêu cầu hoàn tạm ứng nếu cảm thấy không phù hợp (đã trừ thời gian đã làm)."
+        },
+        "two": {
+          "q": "Bao nhiêu vòng chỉnh sửa là đủ?",
+          "a": "Mỗi gói đã quy định số vòng chỉnh sửa. Nếu cần thêm, chi phí mỗi vòng là $80–150 tuỳ phạm vi."
+        },
+        "three": {
+          "q": "Có chấp nhận trả góp không?",
+          "a": "Với dự án trên $5,000, có thể chia thành 3–4 đợt theo milestone thay vì chỉ 50/50."
+        },
+        "four": {
+          "q": "Nếu dự án bị kéo dài thì sao?",
+          "a": "Nếu do đội ngũ: chúng tôi tiếp tục làm không phụ phí. Nếu do thay đổi scope từ phía bạn: sẽ có change request và báo giá bổ sung."
+        },
+        "five": {
+          "q": "Có hỗ trợ xuất hóa đơn không?",
+          "a": "Có. Chúng tôi có thể xuất hóa đơn VAT thông qua công ty đối tác, hoặc invoice quốc tế cho khách nước ngoài."
+        },
+        "six": {
+          "q": "Giá có bao gồm chi phí hosting không?",
+          "a": "Không. Hosting, domain, và các dịch vụ bên thứ ba (Stripe, Firebase…) bạn sẽ tự thanh toán dựa trên usage thực tế."
+        }
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "Đội ngũ",
+      "studio": "Navigin Studio",
+      "title": "Một studio nhỏ, tập trung vào sản phẩm số chất lượng cao",
+      "tagline": "Đội ngũ chuyên gia · Hợp tác toàn cầu · Tận tâm với từng dòng code",
+      "bio": "Chúng tôi là một đội ngũ nhỏ gồm các developer, designer và product specialist — cùng đam mê xây dựng những sản phẩm số đẹp, nhanh và đáng tin cậy cho doanh nghiệp ở mọi quy mô.",
+      "ctaContact": "Hợp tác với chúng tôi",
+      "ctaProjects": "Xem dự án",
+      "stats": {
+        "specialists": "Chuyên gia",
+        "since": "Hoạt động từ",
+        "projects": "Dự án"
+      }
+    },
+    "story": {
+      "eyebrow": "Câu chuyện",
+      "title": "Hành trình của chúng tôi",
+      "paragraphs": [
+        "Navigin được thành lập năm 2025 bởi một nhóm nhỏ developer và designer từng làm việc cùng nhau tại các công ty công nghệ và agency ở Việt Nam và Hàn Quốc. Sau nhiều năm xây dựng sản phẩm cho người khác, chúng tôi quyết định cùng nhau tạo nên một studio nơi chất lượng được đặt lên trước số lượng.",
+        "Đội ngũ hiện vẫn cố tình giữ ở quy mô nhỏ — mỗi dự án đều nhận được sự chăm sóc trực tiếp từ chuyên gia senior. Đến nay chúng tôi đã đưa 6 sản phẩm lên môi trường thật cho khách hàng tại Việt Nam và Hàn Quốc, từ website doanh nghiệp, nền tảng ERP đến e-commerce và app booking.",
+        "Điều chúng tôi tâm đắc nhất là được đồng hành cùng những founder và team có tầm nhìn — những người dám biến ý tưởng thành hành động. Niềm vui của chúng tôi là biến các ý tưởng đó thành sản phẩm chạy thật, tạo ra giá trị thật."
+      ],
+      "highlights": {
+        "since": "Thành lập năm 2025",
+        "countries": "Khách hàng tại Việt Nam & Hàn Quốc",
+        "projects": "6 sản phẩm đã lên môi trường thật"
+      }
+    },
+    "skills": {
+      "eyebrow": "Năng lực",
+      "title": "Chuyên môn của đội ngũ",
+      "subtitle": "Bộ kỹ năng full-stack với chiều sâu ở web, mobile và sản phẩm SaaS.",
+      "categories": {
+        "frontend": {
+          "name": "Frontend",
+          "desc": "Giao diện hiện đại, responsive, hiệu năng cao với Next.js, React và Tailwind."
+        },
+        "backend": {
+          "name": "Backend",
+          "desc": "API và service mở rộng tốt với Node.js, REST/GraphQL và kiến trúc rõ ràng."
+        },
+        "mobile": {
+          "name": "Mobile",
+          "desc": "App iOS & Android cross-platform dùng React Native và Expo."
+        },
+        "devops": {
+          "name": "DevOps",
+          "desc": "CI/CD, Docker, hạ tầng AWS/GCP và monitoring sản phẩm vận hành."
+        },
+        "design": {
+          "name": "UI/UX Design",
+          "desc": "Từ wireframe đến design system với Figma — ưu tiên trải nghiệm thật."
+        },
+        "database": {
+          "name": "Database",
+          "desc": "Thiết kế schema và truy vấn tối ưu với PostgreSQL, MongoDB, Prisma."
+        },
+        "testing": {
+          "name": "Testing",
+          "desc": "Unit test, integration test và kiểm thử thủ công đa thiết bị."
+        },
+        "cms": {
+          "name": "Headless CMS",
+          "desc": "Tích hợp Sanity, Strapi, Contentful để khách hàng tự quản lý nội dung."
+        }
+      }
+    },
+    "team": {
+      "eyebrow": "Đội ngũ",
+      "title": "Vai trò trong đội ngũ",
+      "subtitle": "Một team nhỏ, gọn — mỗi vai trò đều do chuyên gia senior đảm nhận.",
+      "roles": {
+        "design": {
+          "title": "Design & UX",
+          "count": "Specialist",
+          "desc": "Thiết kế product-led, design system, prototype tương tác và brand visual.",
+          "tools": ["Figma", "Framer", "Spline"]
+        },
+        "web": {
+          "title": "Web Engineering",
+          "count": "Specialist",
+          "desc": "Website, landing page, web app — chú trọng hiệu năng, SEO và accessibility.",
+          "tools": ["Next.js", "TypeScript", "Tailwind"]
+        },
+        "mobile": {
+          "title": "Mobile Engineering",
+          "count": "Specialist",
+          "desc": "Ứng dụng iOS & Android dùng React Native — submission lên store và OTA update.",
+          "tools": ["React Native", "Expo", "Firebase"]
+        },
+        "product": {
+          "title": "Product & Strategy",
+          "count": "Specialist",
+          "desc": "Discovery, roadmap, dẫn dắt sprint và đảm bảo dự án giao đúng giá trị cam kết.",
+          "tools": ["Linear", "Notion", "Miro"]
+        }
+      }
+    },
+    "industries": {
+      "eyebrow": "Khách hàng",
+      "title": "Lĩnh vực chúng tôi phục vụ",
+      "subtitle": "Kinh nghiệm thực chiến trong nhiều ngành — hiểu nhanh, đề xuất chuẩn.",
+      "items": {
+        "ecommerce": {
+          "name": "Thương mại điện tử",
+          "desc": "Storefront, headless commerce, quản lý đơn hàng và thanh toán đa kênh."
+        },
+        "saas": {
+          "name": "SaaS & Tech",
+          "desc": "MVP, dashboard, công cụ nội bộ — tối ưu cho onboarding và mở rộng."
+        },
+        "fintech": {
+          "name": "Fintech",
+          "desc": "Sản phẩm thanh toán, ví điện tử, dashboard giao dịch realtime."
+        },
+        "healthtech": {
+          "name": "Healthtech",
+          "desc": "Đặt lịch, hồ sơ điện tử, ứng dụng theo dõi sức khoẻ cá nhân."
+        },
+        "edtech": {
+          "name": "Giáo dục",
+          "desc": "Nền tảng học trực tuyến, LMS, lớp học ảo và đánh giá học viên."
+        },
+        "travel": {
+          "name": "Du lịch & dịch vụ",
+          "desc": "Đặt tour, booking phòng, app du lịch offline-first cho hướng dẫn viên."
+        }
+      }
+    },
+    "values": {
+      "eyebrow": "Phong cách",
+      "title": "Cách chúng tôi làm việc",
+      "items": {
+        "communication": {
+          "title": "Giao tiếp minh bạch",
+          "desc": "Update tiến độ hàng tuần, không bao giờ né tránh tin xấu hay vấn đề kỹ thuật."
+        },
+        "ontime": {
+          "title": "Đúng hẹn",
+          "desc": "Cam kết timeline thực tế và làm mọi cách trong khả năng của team để giữ đúng."
+        },
+        "quality": {
+          "title": "Code chất lượng",
+          "desc": "Sạch, test kỹ, dễ bảo trì — không phải code 'cho xong việc'."
+        }
+      }
+    },
+    "whyUs": {
+      "eyebrow": "Tại sao chọn chúng tôi",
+      "title": "Lý do khách hàng chọn Navigin",
+      "subtitle": "Một studio nhỏ mang lại lợi thế lớn — không trung gian, không lãng phí.",
+      "items": {
+        "senior": {
+          "title": "Đội ngũ senior 100%",
+          "desc": "Không có junior 'học việc' trên dự án của bạn — mỗi thành viên đều có kinh nghiệm thực chiến trực tiếp với sản phẩm."
+        },
+        "direct": {
+          "title": "Làm việc trực tiếp",
+          "desc": "Bạn trao đổi thẳng với người làm sản phẩm — không qua sales hay PM trung gian."
+        },
+        "transparent": {
+          "title": "Báo giá minh bạch",
+          "desc": "Phạm vi rõ ràng, mốc thanh toán cụ thể, không phí ẩn — bạn luôn biết tiền đi đâu."
+        },
+        "partnership": {
+          "title": "Đồng hành dài hạn",
+          "desc": "Chúng tôi không chỉ giao sản phẩm rồi biến mất — đội ngũ luôn sẵn sàng đồng hành cùng bạn sau ngày go-live."
+        }
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Liên hệ",
+      "title": "Bắt đầu dự án của bạn",
+      "subtitle": "Hãy chia sẻ với chúng tôi dự án bạn đang xây dựng. Đội ngũ sẽ phản hồi trong vòng 24 giờ với đề xuất sơ bộ và các bước tiếp theo.",
+      "availableNow": "Đang nhận dự án mới"
+    },
+    "info": {
+      "title": "Kết nối trực tiếp",
+      "subtitle": "Chọn kênh bạn thấy thoải mái nhất.",
+      "email": "Email",
+      "emailValue": "hello@navigin.dev",
+      "copy": "Sao chép",
+      "copied": "Đã sao chép!",
+      "whatsapp": "WhatsApp / Zalo",
+      "whatsappValue": "+84 909 123 456",
+      "telegram": "Telegram",
+      "telegramValue": "@navigin",
+      "responseTitle": "Thời gian phản hồi",
+      "responseValue": "Thông thường trong vòng 24 giờ",
+      "social": "Mạng xã hội",
+      "locationTitle": "Vị trí",
+      "locationValue": "TP. Hồ Chí Minh, Việt Nam"
+    },
+    "form": {
+      "title": "Gửi yêu cầu",
+      "subtitle": "Điền form bên dưới — bạn sẽ nhận phản hồi qua email trong 24 giờ.",
+      "name": "Họ và tên",
+      "namePlaceholder": "Nguyễn Văn A",
+      "email": "Email",
+      "emailPlaceholder": "ban@congty.com",
+      "phone": "Số điện thoại (tuỳ chọn)",
+      "phonePlaceholder": "+84...",
+      "service": "Loại dịch vụ",
+      "servicePlaceholder": "Chọn dịch vụ",
+      "serviceOptions": {
+        "web": "Website",
+        "mobile": "Ứng dụng di động",
+        "webapp": "Web App / SaaS",
+        "other": "Khác"
+      },
+      "budget": "Ngân sách dự kiến",
+      "budgetPlaceholder": "Chọn khoảng ngân sách",
+      "budgetOptions": {
+        "small": "Dưới $500",
+        "medium": "$500 – $2,000",
+        "large": "$2,000 – $5,000",
+        "xlarge": "Trên $5,000",
+        "discuss": "Cần thảo luận thêm"
+      },
+      "description": "Mô tả dự án",
+      "descriptionPlaceholder": "Hãy chia sẻ ngắn gọn về dự án, mục tiêu, deadline mong muốn... (tối thiểu 50 ký tự)",
+      "timeline": "Timeline mong muốn",
+      "timelinePlaceholder": "Chọn timeline",
+      "timelineOptions": {
+        "asap": "Càng sớm càng tốt",
+        "month": "Trong 1 tháng",
+        "quarter": "2 – 3 tháng",
+        "flexible": "Linh hoạt"
+      },
+      "source": "Bạn biết chúng tôi qua đâu?",
+      "sourcePlaceholder": "Chọn nguồn",
+      "sourceOptions": {
+        "google": "Google",
+        "referral": "Bạn bè giới thiệu",
+        "social": "Mạng xã hội",
+        "other": "Khác"
+      },
+      "submit": "Gửi yêu cầu",
+      "submitting": "Đang gửi...",
+      "successTitle": "Đã gửi thành công!",
+      "successMessage": "Cảm ơn bạn. Đội ngũ sẽ phản hồi qua email trong vòng 24 giờ.",
+      "errorTitle": "Có lỗi xảy ra",
+      "errorMessage": "Không gửi được. Vui lòng thử lại hoặc liên hệ qua email."
+    },
+    "validation": {
+      "nameRequired": "Vui lòng nhập họ tên",
+      "nameMin": "Tối thiểu 2 ký tự",
+      "emailRequired": "Vui lòng nhập email",
+      "emailInvalid": "Email không hợp lệ",
+      "serviceRequired": "Vui lòng chọn dịch vụ",
+      "budgetRequired": "Vui lòng chọn ngân sách",
+      "descriptionRequired": "Vui lòng mô tả dự án",
+      "descriptionMin": "Tối thiểu 50 ký tự",
+      "timelineRequired": "Vui lòng chọn timeline",
+      "sourceRequired": "Vui lòng chọn nguồn"
+    },
+    "calendly": {
+      "eyebrow": "Đặt lịch",
+      "title": "Đặt cuộc gọi 30 phút",
+      "subtitle": "Trao đổi trực tiếp về dự án — miễn phí, không ràng buộc.",
+      "button": "Đặt lịch với tôi",
+      "note": "Có sẵn từ thứ 2 đến thứ 6, 9:00 — 18:00 (GMT+7)"
+    }
+  }
+}

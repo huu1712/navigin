@@ -1,0 +1,711 @@
+{
+  "meta": {
+    "name": "Navigin",
+    "tagline": "Freelance Web & App Developer",
+    "fullName": "Navigin — Web & App Developer",
+    "siteUrl": "https://navigin.dev"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "pricing": "Pricing",
+    "about": "About",
+    "contact": "Contact",
+    "hireMe": "Work With Us",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "toggleTheme": "Toggle theme",
+    "language": "Language"
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "viewAll": "View all",
+    "getStarted": "Get started",
+    "contactMe": "Contact us",
+    "viewServices": "View services",
+    "scrollDown": "Scroll down",
+    "from": "From",
+    "timeline": "Timeline",
+    "techStack": "Tech stack",
+    "includes": "Includes",
+    "popular": "Most popular",
+    "comingSoon": "Coming soon"
+  },
+  "badges": {
+    "available": "Available for projects",
+    "fullyBooked": "Fully booked this month",
+    "responseTime": "Replies within 24h"
+  },
+  "hero": {
+    "title": "We build Websites & Apps for your business",
+    "titleAccent": "business",
+    "subtitle": "Navigin is a product studio with a 100% senior team — we turn your ideas into beautiful, fast and reliable digital products.",
+    "ctaPrimary": "View services",
+    "ctaSecondary": "Contact us",
+    "available": "Available for projects"
+  },
+  "stats": {
+    "title": "Numbers that speak",
+    "subtitle": "Trust built one project at a time",
+    "projects": "Live projects",
+    "specialists": "Senior specialists",
+    "countries": "Countries served",
+    "response": "Avg. response time"
+  },
+  "servicesTeaser": {
+    "eyebrow": "Services",
+    "title": "What we can do for you?",
+    "subtitle": "From the first sketch to a product that scales — the team is with you at every stage.",
+    "viewAll": "View all services",
+    "items": {
+      "web": {
+        "title": "Website Development",
+        "desc": "Landing pages, corporate sites, e-commerce — beautiful design, optimized for SEO, blazing fast."
+      },
+      "mobile": {
+        "title": "Mobile App Development",
+        "desc": "iOS & Android from a single React Native codebase — save time, ship a consistent experience."
+      },
+      "webapp": {
+        "title": "Web App / SaaS",
+        "desc": "Dashboards, admin panels, internal tools, startup MVPs — solid architecture, ready to scale."
+      }
+    }
+  },
+  "projects": {
+    "eyebrow": "Work",
+    "title": "Featured projects",
+    "subtitle": "A few products we've shipped for clients at home and abroad.",
+    "viewLive": "Visit live site",
+    "items": {
+      "mit": {
+        "desc": "Corporate website for Mijuit IT, a Korean enterprise software firm. Clean Angular-driven marketing layout with smooth routing and a responsive multi-device experience."
+      },
+      "order": {
+        "desc": "Large-scale sales order & ERP platform used by Mijuit's distribution team. Reactive Forms, live inventory sync, multi-role access, Chart.js dashboards, and printable invoices."
+      },
+      "mood": {
+        "desc": "Admin dashboard and storefront for a Vietnamese bubble-tea brand. Full CRUD product catalog, real-time stock, filtered order history with pagination."
+      },
+      "chamwoodon": {
+        "desc": "E-commerce site for a Korean wood-aged spirits brand. Reusable UI, Angular Router-driven flows, and a checkout that ships in three steps."
+      },
+      "datsan": {
+        "desc": "Booking platform for a Vietnamese sports venue. Real-time slot availability, multi-role access, and admin dashboards built on Next.js + TypeScript."
+      },
+      "hanroyal": {
+        "desc": "E-commerce site for a Korean premium meat brand. Reusable UI, Angular Router-driven flows, and a checkout that ships in three steps."
+      }
+    }
+  },
+  "tech": {
+    "eyebrow": "Stack",
+    "title": "Technologies we work with",
+    "subtitle": "A modern toolkit to ship products fast and built to last."
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "title": "What clients say",
+    "subtitle": "Client happiness is the best motivation.",
+    "items": {
+      "one": {
+        "name": "Tran Minh Hang",
+        "role": "Founder, Lumen Studio",
+        "quote": "The product exceeded our expectations. Clean code, beautiful UI, and most importantly delivered on time. We'll keep working with him."
+      },
+      "two": {
+        "name": "James Carter",
+        "role": "CTO, Trailhead Inc.",
+        "quote": "Working with him was a pleasure — proactive communication, deep technical knowledge, and a real eye for UX. Highly recommended."
+      },
+      "three": {
+        "name": "Nguyen Quoc Bao",
+        "role": "CEO, Northwind Group",
+        "quote": "He understood our business needs quickly and proposed sensible solutions. The CRM dashboard now saves our team dozens of hours every week."
+      }
+    }
+  },
+  "ctaBanner": {
+    "title": "Ready to start your project?",
+    "subtitle": "Share your idea — we'll reply with a preliminary proposal within 24 hours.",
+    "button": "Contact us"
+  },
+  "footer": {
+    "tagline": "Building beautiful, fast and reliable digital products.",
+    "navigation": "Navigation",
+    "servicesCol": "Services",
+    "contactCol": "Contact",
+    "builtWith": "Built with",
+    "rights": "All rights reserved.",
+    "responseTime": "Replies within 24 hours",
+    "location": "Ho Chi Minh City, Vietnam"
+  },
+  "services": {
+    "hero": {
+      "eyebrow": "Services",
+      "title": "Professional development services",
+      "subtitle": "Three core services, each designed to deliver real value to your business.",
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "Services"
+    },
+    "items": {
+      "web": {
+        "name": "Website Development",
+        "tagline": "Landing page · Corporate · E-commerce",
+        "description": "From landing pages to complex e-commerce platforms. Every site we build is optimized for SEO, load speed and a great experience on every device.",
+        "includes": [
+          "Responsive design across desktop, tablet and mobile",
+          "Foundational SEO (meta tags, sitemap, schema)",
+          "CMS integration so you can update content yourself",
+          "Deployment to Vercel / Netlify / cPanel",
+          "Analytics setup (Google Analytics & Search Console)",
+          "30 days of post-launch support"
+        ],
+        "techList": ["Next.js", "WordPress", "Shopify", "Tailwind CSS", "Vercel"],
+        "timeline": "1 – 4 weeks",
+        "priceFrom": "$500",
+        "cta": "Request this service"
+      },
+      "mobile": {
+        "name": "Mobile App Development",
+        "tagline": "Cross-platform · iOS · Android",
+        "description": "Build apps for both iOS and Android from a single React Native codebase — save 50% in cost and time compared to native development.",
+        "includes": [
+          "UI/UX design aligned with your brand",
+          "REST / GraphQL API integration",
+          "Push notifications (FCM/APNs)",
+          "Auth & account management",
+          "App Store & Google Play submission",
+          "OTA updates support"
+        ],
+        "techList": ["React Native", "Expo", "Firebase", "REST/GraphQL"],
+        "timeline": "4 – 12 weeks",
+        "priceFrom": "$2,000",
+        "cta": "Request this service"
+      },
+      "webapp": {
+        "name": "Web Application / SaaS",
+        "tagline": "Dashboard · Admin Panel · SaaS MVP",
+        "description": "Complex web apps: CRMs, admin dashboards, internal tools, startup MVPs. Solid architecture, easy to scale as your business grows.",
+        "includes": [
+          "Auth and multi-role permissions",
+          "Database & API design",
+          "Real-time analytics dashboard",
+          "Payment integration (Stripe/VNPAY)",
+          "Docker & CI/CD setup",
+          "Comprehensive technical documentation"
+        ],
+        "techList": ["Next.js", "Node.js", "PostgreSQL", "Prisma", "Docker", "AWS"],
+        "timeline": "6 – 16 weeks",
+        "priceFrom": "$3,000",
+        "cta": "Request this service"
+      }
+    },
+    "process": {
+      "eyebrow": "Process",
+      "title": "My work process",
+      "subtitle": "A transparent 5-step process — you always know where the project stands.",
+      "steps": {
+        "one": { "title": "Discovery call", "desc": "A 30-minute call to understand goals, scope and expectations." },
+        "two": { "title": "Proposal & contract", "desc": "Detailed solution proposal with clear timeline and budget." },
+        "three": { "title": "UI/UX design", "desc": "Wireframes, mockups and interactive prototypes before any code." },
+        "four": { "title": "Development", "desc": "1–2 week sprints with regular demos so you can track progress." },
+        "five": { "title": "Launch & support", "desc": "Deployment, training and 30 days of post-launch technical support." }
+      }
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Frequently asked questions",
+      "subtitle": "Still have questions? Get in touch directly.",
+      "items": {
+        "one": {
+          "q": "Can I request design revisions?",
+          "a": "Absolutely. Every stage (wireframe, mockup, prototype) has a review round and you can request changes until you're happy."
+        },
+        "two": {
+          "q": "Who owns the source code after delivery?",
+          "a": "You do — 100%. We'll transfer the entire repository, hosting accounts and technical documentation to you."
+        },
+        "three": {
+          "q": "Do you offer post-launch support?",
+          "a": "Yes. Every package includes 30 days of free bug-fix support. After that, monthly maintenance plans are available."
+        },
+        "four": {
+          "q": "Can I hire the team hourly?",
+          "a": "Yes, at $35–60/hour depending on complexity and role. However, fixed-scope projects usually work out cheaper for you."
+        },
+        "five": {
+          "q": "Do you sign NDAs?",
+          "a": "Happy to. We'll sign an NDA before discussing project details if you request one."
+        }
+      }
+    }
+  },
+  "pricing": {
+    "hero": {
+      "eyebrow": "Pricing",
+      "title": "Transparent pricing",
+      "subtitle": "Clear pricing, no hidden fees. Every package includes post-launch support and full documentation."
+    },
+    "toggle": {
+      "web": "Website",
+      "mobile": "Mobile App",
+      "webapp": "Web App"
+    },
+    "tiers": {
+      "popular": "Most popular",
+      "custom": "Custom",
+      "perProject": "/ project",
+      "getStarted": "Get started"
+    },
+    "web": {
+      "starter": {
+        "name": "Starter",
+        "desc": "For new businesses that need a professional landing page.",
+        "price": "$500",
+        "features": [
+          "Single landing page",
+          "Up to 5 sections",
+          "Fully responsive",
+          "Basic SEO",
+          "1 round of revisions",
+          "Delivered in 1–2 weeks"
+        ]
+      },
+      "business": {
+        "name": "Business",
+        "desc": "The most popular choice for multi-page corporate sites.",
+        "price": "$1,200",
+        "features": [
+          "Up to 10 pages",
+          "CMS integration (Sanity/Strapi)",
+          "Contact form & email automation",
+          "Google Analytics & advanced SEO",
+          "3 rounds of revisions",
+          "Delivered in 2–4 weeks"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "desc": "For e-commerce and complex custom websites.",
+        "price": "Custom",
+        "features": [
+          "E-commerce (Shopify/custom)",
+          "ERP/CRM integration",
+          "Multi-language & multi-currency",
+          "24/7 priority support",
+          "Unlimited revisions",
+          "Uptime SLA"
+        ]
+      }
+    },
+    "mobile": {
+      "starter": {
+        "name": "MVP",
+        "desc": "First version to validate your idea and raise funding.",
+        "price": "$2,000",
+        "features": [
+          "Core features only",
+          "iOS & Android",
+          "Basic auth (email/social)",
+          "Up to 8 screens",
+          "TestFlight & internal testing",
+          "Delivered in 4–6 weeks"
+        ]
+      },
+      "business": {
+        "name": "Standard",
+        "desc": "Complete app ready to ship to the stores.",
+        "price": "$4,500",
+        "features": [
+          "Complete feature set",
+          "Push notifications",
+          "Payment integration",
+          "Admin panel",
+          "App Store & Play Store submission",
+          "Delivered in 8–12 weeks"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "desc": "Custom architecture for large-scale apps.",
+        "price": "Custom",
+        "features": [
+          "Microservices architecture",
+          "Automated CI/CD",
+          "Advanced analytics",
+          "Ongoing support",
+          "Internal system integrations",
+          "SLA & dedicated support"
+        ]
+      }
+    },
+    "webapp": {
+      "starter": {
+        "name": "Starter",
+        "desc": "For internal dashboards or simple tools.",
+        "price": "$3,000",
+        "features": [
+          "Auth & permissions",
+          "Dashboard with charts",
+          "Full CRUD",
+          "REST API",
+          "Production deployment",
+          "Delivered in 6–8 weeks"
+        ]
+      },
+      "business": {
+        "name": "Growth",
+        "desc": "SaaS ready to ship to real paying customers.",
+        "price": "$6,000",
+        "features": [
+          "Multi-tenant with role-based access",
+          "Stripe payment integration",
+          "Email & notification system",
+          "Analytics & reporting",
+          "Docker & CI/CD",
+          "Delivered in 10–14 weeks"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "desc": "Custom infrastructure for large-scale SaaS.",
+        "price": "Custom",
+        "features": [
+          "Microservices architecture",
+          "Custom AWS/GCP infrastructure",
+          "99.9% uptime SLA",
+          "Dedicated support",
+          "Advanced security",
+          "Internal team training"
+        ]
+      }
+    },
+    "included": {
+      "eyebrow": "Always included",
+      "title": "What's always included",
+      "subtitle": "No matter which package you choose, these essentials are guaranteed.",
+      "items": {
+        "git": { "title": "Git version control", "desc": "Code committed transparently — you get repo access." },
+        "test": { "title": "Thorough testing", "desc": "Manual testing across devices + unit tests for critical logic." },
+        "docs": { "title": "Full documentation", "desc": "Operation, deployment and onboarding guides for new team members." },
+        "support": { "title": "30 days of support", "desc": "Free bug fixes for 30 days after official handoff." },
+        "nda": { "title": "NDA ready", "desc": "The team signs an NDA before discussing details if you request one." },
+        "lang": { "title": "Bilingual EN/VI", "desc": "Communication and docs in whichever language you're most comfortable with." }
+      }
+    },
+    "payment": {
+      "eyebrow": "Payment",
+      "title": "Payment terms",
+      "subtitle": "Simple, fair and transparent for both sides.",
+      "terms": {
+        "upfront": { "title": "50% upfront", "desc": "After contract signing, to kick off design and development." },
+        "delivery": { "title": "50% on delivery", "desc": "Before production deployment and source code handover." }
+      },
+      "methods": {
+        "title": "Accepted methods",
+        "bank": "Bank transfer",
+        "paypal": "PayPal",
+        "wise": "Wise",
+        "crypto": "USDT (optional)"
+      }
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Pricing questions",
+      "items": {
+        "one": {
+          "q": "Can I get a refund if I'm not satisfied?",
+          "a": "Yes. In the first 7 days you can request a refund of the upfront payment (minus work already completed)."
+        },
+        "two": {
+          "q": "How many revisions are enough?",
+          "a": "Each package specifies a number of revision rounds. Additional rounds are $80–150 each depending on scope."
+        },
+        "three": {
+          "q": "Do you accept installments?",
+          "a": "For projects over $5,000 we can break payment into 3–4 milestones rather than just 50/50."
+        },
+        "four": {
+          "q": "What if the project runs over schedule?",
+          "a": "If it's on the team: we keep working at no extra cost. If scope changes on your side: we'll handle it via a change request and additional quote."
+        },
+        "five": {
+          "q": "Do you provide invoices?",
+          "a": "Yes — VAT invoices via a partner company for Vietnam, international invoices for overseas clients."
+        },
+        "six": {
+          "q": "Does the price include hosting?",
+          "a": "No. Hosting, domain and third-party services (Stripe, Firebase…) are paid by you based on actual usage."
+        }
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "Our team",
+      "studio": "Navigin Studio",
+      "title": "A small studio focused on high-quality digital products",
+      "tagline": "Specialist team · Globally remote · Devoted to every line of code",
+      "bio": "We're a tight-knit team of developers, designers and product specialists — united by a passion for shipping beautiful, fast and reliable digital products for businesses of any size.",
+      "ctaContact": "Work with us",
+      "ctaProjects": "See our work",
+      "stats": {
+        "specialists": "Specialists",
+        "since": "Founded",
+        "projects": "Projects"
+      }
+    },
+    "story": {
+      "eyebrow": "Story",
+      "title": "Our journey",
+      "paragraphs": [
+        "Navigin was founded in 2025 by a small group of developers and designers who'd worked together at tech companies and agencies in Vietnam and Korea. After years of shipping products for others, we decided to start a studio where quality comes before quantity.",
+        "Today the team is intentionally small — every project gets the senior attention it deserves. So far we've shipped six products in production for clients in Vietnam and Korea, from corporate websites and ERP platforms to e-commerce and booking apps.",
+        "What we love most is partnering with founders and teams who have vision — people who dare to turn ideas into action. Our joy is shaping those ideas into shipped products that drive real value."
+      ],
+      "highlights": {
+        "since": "Founded in 2025",
+        "countries": "Clients in Vietnam & Korea",
+        "projects": "6 live products shipped"
+      }
+    },
+    "skills": {
+      "eyebrow": "Capabilities",
+      "title": "What the team does best",
+      "subtitle": "A full-stack skill set with depth in web, mobile and SaaS products.",
+      "categories": {
+        "frontend": {
+          "name": "Frontend",
+          "desc": "Modern, responsive, high-performance UIs with Next.js, React and Tailwind."
+        },
+        "backend": {
+          "name": "Backend",
+          "desc": "Scalable APIs and services with Node.js, REST/GraphQL and clean architecture."
+        },
+        "mobile": {
+          "name": "Mobile",
+          "desc": "Cross-platform iOS & Android apps with React Native and Expo."
+        },
+        "devops": {
+          "name": "DevOps",
+          "desc": "CI/CD, Docker, AWS/GCP infrastructure and production monitoring."
+        },
+        "design": {
+          "name": "UI/UX Design",
+          "desc": "From wireframes to design systems in Figma — real user experience first."
+        },
+        "database": {
+          "name": "Database",
+          "desc": "Schema design and tuned queries with PostgreSQL, MongoDB and Prisma."
+        },
+        "testing": {
+          "name": "Testing",
+          "desc": "Unit, integration and manual cross-device testing to ship with confidence."
+        },
+        "cms": {
+          "name": "Headless CMS",
+          "desc": "Sanity, Strapi and Contentful integrations so clients manage content themselves."
+        }
+      }
+    },
+    "team": {
+      "eyebrow": "Team",
+      "title": "Roles inside the studio",
+      "subtitle": "A small, lean team — every role is held by a senior specialist.",
+      "roles": {
+        "design": {
+          "title": "Design & UX",
+          "count": "Specialist",
+          "desc": "Product-led design, design systems, interactive prototypes and brand visuals.",
+          "tools": ["Figma", "Framer", "Spline"]
+        },
+        "web": {
+          "title": "Web Engineering",
+          "count": "Specialist",
+          "desc": "Websites, landing pages and web apps — focused on performance, SEO and accessibility.",
+          "tools": ["Next.js", "TypeScript", "Tailwind"]
+        },
+        "mobile": {
+          "title": "Mobile Engineering",
+          "count": "Specialist",
+          "desc": "iOS & Android apps using React Native — store submission and OTA updates included.",
+          "tools": ["React Native", "Expo", "Firebase"]
+        },
+        "product": {
+          "title": "Product & Strategy",
+          "count": "Specialist",
+          "desc": "Discovery, roadmap, sprint facilitation and making sure the project delivers the promised value.",
+          "tools": ["Linear", "Notion", "Miro"]
+        }
+      }
+    },
+    "industries": {
+      "eyebrow": "Clients",
+      "title": "Industries we serve",
+      "subtitle": "Hands-on experience across many sectors — fast onboarding, sharper recommendations.",
+      "items": {
+        "ecommerce": {
+          "name": "E-commerce",
+          "desc": "Storefronts, headless commerce, order management and multi-channel payments."
+        },
+        "saas": {
+          "name": "SaaS & Tech",
+          "desc": "MVPs, dashboards, internal tools — optimized for onboarding and scale."
+        },
+        "fintech": {
+          "name": "Fintech",
+          "desc": "Payment products, e-wallets and real-time trading dashboards."
+        },
+        "healthtech": {
+          "name": "Healthtech",
+          "desc": "Appointment booking, electronic records and personal health-tracking apps."
+        },
+        "edtech": {
+          "name": "Education",
+          "desc": "Online learning platforms, LMS, virtual classrooms and learner assessment."
+        },
+        "travel": {
+          "name": "Travel & services",
+          "desc": "Tour booking, room reservations and offline-first apps for tour guides."
+        }
+      }
+    },
+    "values": {
+      "eyebrow": "Style",
+      "title": "How we work",
+      "items": {
+        "communication": {
+          "title": "Transparent communication",
+          "desc": "Weekly progress updates — we never hide bad news or technical issues."
+        },
+        "ontime": {
+          "title": "On-time delivery",
+          "desc": "Realistic timelines and everything in the team's power to honor them."
+        },
+        "quality": {
+          "title": "Quality code",
+          "desc": "Clean, tested, maintainable — not 'just get it done' code."
+        }
+      }
+    },
+    "whyUs": {
+      "eyebrow": "Why us",
+      "title": "Why clients pick Navigin",
+      "subtitle": "A small studio brings big advantages — no middlemen, no waste.",
+      "items": {
+        "senior": {
+          "title": "100% senior team",
+          "desc": "No juniors learning on your project — every member is hands-on with real production experience."
+        },
+        "direct": {
+          "title": "Direct collaboration",
+          "desc": "You talk straight to the people building your product — no sales or intermediate PMs."
+        },
+        "transparent": {
+          "title": "Transparent pricing",
+          "desc": "Clear scope, defined payment milestones, no hidden fees — you always know where your money goes."
+        },
+        "partnership": {
+          "title": "Long-term partnership",
+          "desc": "We don't ship and disappear — the team is set up to support every client well beyond launch."
+        }
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Start your project",
+      "subtitle": "Tell us what you're building. The team will reply within 24 hours with a preliminary proposal and next steps.",
+      "availableNow": "Accepting new projects"
+    },
+    "info": {
+      "title": "Reach out directly",
+      "subtitle": "Pick the channel you're most comfortable with.",
+      "email": "Email",
+      "emailValue": "hello@navigin.dev",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "whatsapp": "WhatsApp / Zalo",
+      "whatsappValue": "+84 909 123 456",
+      "telegram": "Telegram",
+      "telegramValue": "@navigin",
+      "responseTitle": "Response time",
+      "responseValue": "Usually within 24 hours",
+      "social": "Social",
+      "locationTitle": "Location",
+      "locationValue": "Ho Chi Minh City, Vietnam"
+    },
+    "form": {
+      "title": "Send a request",
+      "subtitle": "Fill out the form — you'll hear back via email within 24 hours.",
+      "name": "Full name",
+      "namePlaceholder": "John Doe",
+      "email": "Email",
+      "emailPlaceholder": "you@company.com",
+      "phone": "Phone (optional)",
+      "phonePlaceholder": "+1...",
+      "service": "Service type",
+      "servicePlaceholder": "Select a service",
+      "serviceOptions": {
+        "web": "Website",
+        "mobile": "Mobile App",
+        "webapp": "Web App / SaaS",
+        "other": "Other"
+      },
+      "budget": "Budget range",
+      "budgetPlaceholder": "Select a budget range",
+      "budgetOptions": {
+        "small": "Under $500",
+        "medium": "$500 – $2,000",
+        "large": "$2,000 – $5,000",
+        "xlarge": "Over $5,000",
+        "discuss": "Let's discuss"
+      },
+      "description": "Project description",
+      "descriptionPlaceholder": "Briefly describe your project, goals, ideal deadline... (min 50 characters)",
+      "timeline": "Desired timeline",
+      "timelinePlaceholder": "Select a timeline",
+      "timelineOptions": {
+        "asap": "ASAP",
+        "month": "Within 1 month",
+        "quarter": "2 – 3 months",
+        "flexible": "Flexible"
+      },
+      "source": "How did you find me?",
+      "sourcePlaceholder": "Select a source",
+      "sourceOptions": {
+        "google": "Google",
+        "referral": "Referral",
+        "social": "Social Media",
+        "other": "Other"
+      },
+      "submit": "Send request",
+      "submitting": "Sending...",
+      "successTitle": "Sent successfully!",
+      "successMessage": "Thank you. The team will reply via email within 24 hours.",
+      "errorTitle": "Something went wrong",
+      "errorMessage": "Couldn't send. Please try again or contact us by email."
+    },
+    "validation": {
+      "nameRequired": "Please enter your name",
+      "nameMin": "At least 2 characters",
+      "emailRequired": "Please enter an email",
+      "emailInvalid": "Invalid email",
+      "serviceRequired": "Please select a service",
+      "budgetRequired": "Please select a budget",
+      "descriptionRequired": "Please describe the project",
+      "descriptionMin": "At least 50 characters",
+      "timelineRequired": "Please select a timeline",
+      "sourceRequired": "Please select a source"
+    },
+    "calendly": {
+      "eyebrow": "Book a call",
+      "title": "Book a 30-minute call",
+      "subtitle": "Talk directly about your project — free, no commitment.",
+      "button": "Book a call with me",
+      "note": "Available Mon–Fri, 9:00 – 18:00 (GMT+7)"
+    }
+  }
+}
