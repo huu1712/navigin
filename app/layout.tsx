@@ -1,8 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import {
   Bricolage_Grotesque,
-  DM_Sans,
   JetBrains_Mono,
+  Plus_Jakarta_Sans,
 } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
@@ -14,15 +14,18 @@ const bricolage = Bricolage_Grotesque({
   weight: ["400", "500", "600", "700", "800"],
 });
 
-const dmSans = DM_Sans({
-  subsets: ["latin", "latin-ext"],
-  variable: "--font-dm-sans",
+// Plus Jakarta Sans — modern geometric sans-serif with full Vietnamese
+// support (đầy đủ dấu: ặ, ử, ữ, ờ…). Replaces DM Sans which only had
+// latin-ext coverage and rendered Vietnamese diacritics from a fallback.
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ["latin", "vietnamese"],
+  variable: "--font-plus-jakarta",
   display: "swap",
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 const jetbrains = JetBrains_Mono({
-  subsets: ["latin", "latin-ext"],
+  subsets: ["latin", "vietnamese"],
   variable: "--font-jetbrains",
   display: "swap",
   weight: ["400", "500", "600"],
@@ -56,7 +59,7 @@ export default function RootLayout({
     <html
       lang="vi"
       suppressHydrationWarning
-      className={`${bricolage.variable} ${dmSans.variable} ${jetbrains.variable}`}
+      className={`${bricolage.variable} ${plusJakarta.variable} ${jetbrains.variable}`}
     >
       <body className="min-h-screen flex flex-col bg-background text-foreground antialiased">
         <ThemeProvider>{children}</ThemeProvider>

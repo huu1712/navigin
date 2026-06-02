@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import gsap from "gsap";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 
@@ -12,12 +13,19 @@ import { Container } from "@/components/ui/Container";
 import { Logo } from "@/components/layout/Logo";
 import { ThemeToggle } from "@/components/layout/ThemeToggle";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
+import { Magnetic } from "@/components/motion/Magnetic";
 
 export function Navbar() {
   const t = useTranslations("nav");
   const pathname = usePathname();
+  const headerRef = useRef<HTMLElement | null>(null);
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  // Tracks whether the height-animation has finished. Used to switch the
+  // mobile menu wrapper from `overflow-hidden` (needed during open/close
+  // transitions) to `overflow-visible` so popovers like LanguageSwitcher
+  // can escape the container.
+  const [mobileAnimDone, setMobileAnimDone] = useState(false);
   const [lastPath, setLastPath] = useState(pathname);
   const scrollAfterMobileNavRef = useRef(false);
 
@@ -32,6 +40,33 @@ export function Navbar() {
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    const header = headerRef.current;
+    if (!header) return;
+    const reduced = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    const ctx = gsap.context(() => {
+      const items = Array.from(
+        header.querySelectorAll<HTMLElement>("[data-nav-stagger]"),
+      );
+      if (items.length === 0) return;
+      // Reduced-motion users get a quick fade with no translation.
+      gsap.set(items, { opacity: 0, y: reduced ? 0 : -8 });
+      gsap.to(items, {
+        opacity: 1,
+        y: 0,
+        duration: reduced ? 0.3 : 0.7,
+        stagger: reduced ? 0.03 : 0.06,
+        ease: reduced ? "power1.out" : "power3.out",
+        delay: 0.05,
+      });
+    }, headerRef);
+
+    return () => ctx.revert();
   }, []);
 
   useEffect(() => {
@@ -80,18 +115,20 @@ export function Navbar() {
 
   return (
     <header
+      ref={headerRef}
+      data-scrolled={scrolled || undefined}
       className={cn(
-        "sticky top-0 z-50 w-full transition-all duration-300",
-        scrolled
-          ? "border-b border-border/70 bg-background/80 backdrop-blur-md backdrop-saturate-150"
-          : "border-b border-transparent bg-transparent",
+        "navbar-glass sticky top-0 z-50 w-full transition-all duration-300",
+        scrolled && "navbar-glass-on",
       )}
     >
       <Container
         size="wide"
         className="flex h-16 items-center justify-between gap-4 sm:h-18"
       >
-        <Logo />
+        <span data-nav-stagger className="gsap-init-hidden inline-flex">
+          <Logo />
+        </span>
 
         <nav className="hidden items-center gap-1 lg:flex">
           {NAV_LINKS.map((link) => {
@@ -103,8 +140,9 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
+                data-nav-stagger
                 className={cn(
-                  "relative inline-flex items-center px-3.5 py-2 text-sm font-medium transition-colors",
+                  "gsap-init-hidden relative inline-flex items-center px-3.5 py-2 text-sm font-medium transition-colors",
                   isActive
                     ? "text-foreground"
                     : "text-foreground-muted hover:text-foreground",
@@ -128,25 +166,35 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <div className="hidden md:block">
+          <div
+            data-nav-stagger
+            className="gsap-init-hidden hidden md:block"
+          >
             <LanguageSwitcher />
           </div>
-          <div className="hidden md:block">
+          <div
+            data-nav-stagger
+            className="gsap-init-hidden hidden md:block"
+          >
             <ThemeToggle />
           </div>
-          <Link
-            href="/contact"
-            className="hidden h-10 items-center gap-1.5 rounded-full bg-foreground px-5 text-sm font-medium text-background shadow-[0_8px_20px_-8px_rgba(0,0,0,0.35)] transition-all hover:opacity-90 active:scale-[0.98] sm:inline-flex"
-          >
-            {t("hireMe")}
-            <ArrowRight className="h-4 w-4" strokeWidth={2} />
-          </Link>
+          <Magnetic strength={14} radius={120}>
+            <Link
+              href="/contact"
+              data-nav-stagger
+              className="gsap-init-hidden hidden h-10 items-center gap-1.5 rounded-full bg-foreground px-5 text-sm font-medium text-background shadow-[0_8px_20px_-8px_rgba(0,0,0,0.35)] transition-all hover:opacity-90 active:scale-[0.98] sm:inline-flex"
+            >
+              {t("hireMe")}
+              <ArrowRight className="h-4 w-4" strokeWidth={2} />
+            </Link>
+          </Magnetic>
           <button
             type="button"
             onClick={() => setMobileOpen((v) => !v)}
             aria-label={mobileOpen ? t("closeMenu") : t("openMenu")}
             aria-expanded={mobileOpen}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-surface text-foreground transition-colors hover:bg-surface-2 lg:hidden"
+            data-nav-stagger
+            className="gsap-init-hidden inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-surface text-foreground transition-colors hover:bg-surface-2 lg:hidden"
           >
             {mobileOpen ? (
               <X className="h-4 w-4" strokeWidth={2} />
@@ -157,14 +205,23 @@ export function Navbar() {
         </div>
       </Container>
 
-      <AnimatePresence>
+      <AnimatePresence onExitComplete={() => setMobileAnimDone(false)}>
         {mobileOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="overflow-hidden border-t border-border bg-background/95 backdrop-blur-md lg:hidden"
+            onAnimationStart={() => setMobileAnimDone(false)}
+            onAnimationComplete={() => {
+              if (mobileOpen) setMobileAnimDone(true);
+            }}
+            className={cn(
+              "border-t border-border bg-background/95 backdrop-blur-md lg:hidden",
+              mobileOpen && mobileAnimDone
+                ? "overflow-visible"
+                : "overflow-hidden",
+            )}
           >
             <Container size="wide" className="flex flex-col gap-1 py-4">
               {NAV_LINKS.map((link, i) => {

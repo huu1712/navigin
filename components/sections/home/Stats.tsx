@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { SectionReveal } from "@/components/motion/SectionReveal";
 import { AnimatedCounter } from "@/components/motion/AnimatedCounter";
+import { Tilt } from "@/components/motion/Tilt";
 
 type StatItem = {
   key: "projects" | "specialists" | "countries" | "response";
@@ -65,19 +66,21 @@ export function Stats() {
                 key={item.key}
                 delay={i * 0.08}
                 direction="up"
-                className="card group relative h-full overflow-hidden p-6 sm:p-7"
+                className="h-full"
               >
-                <div
-                  aria-hidden
-                  className={`absolute inset-x-0 top-0 h-1 bg-gradient-to-r ${item.accent}`}
-                />
-                <div
-                  aria-hidden
-                  className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-40"
-                  style={{ backgroundColor: item.hue }}
-                />
+                <Tilt max={9} spotlight className="rounded-[var(--radius-lg)]">
+                  <div className="card group relative h-full overflow-hidden p-6 sm:p-7">
+                    <div
+                      aria-hidden
+                      className={`absolute inset-x-0 top-0 h-1 bg-gradient-to-r ${item.accent}`}
+                    />
+                    <div
+                      aria-hidden
+                      className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-40"
+                      style={{ backgroundColor: item.hue }}
+                    />
 
-                <div className="relative flex h-full flex-col gap-4">
+                    <div className="relative flex h-full flex-col gap-4">
                   <div className="flex items-start justify-between">
                     <span
                       className={`inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br ${item.accent} text-white shadow-[var(--shadow-card)]`}
@@ -119,7 +122,9 @@ export function Stats() {
                       {t(`${item.key}.sub`)}
                     </p>
                   </div>
-                </div>
+                    </div>
+                  </div>
+                </Tilt>
               </SectionReveal>
             );
           })}

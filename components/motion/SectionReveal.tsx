@@ -1,9 +1,18 @@
 "use client";
 
-import { motion, useReducedMotion, type Variants } from "framer-motion";
-import { type ReactNode } from "react";
+import { useEffect, useRef, type ReactNode } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+import { cn } from "@/lib/cn";
+
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 type Direction = "up" | "down" | "left" | "right" | "none";
+
+type Tag = "div" | "section" | "article" | "header" | "footer" | "li" | "ul";
 
 type Props = {
   children: ReactNode;
@@ -12,64 +21,131 @@ type Props = {
   direction?: Direction;
   once?: boolean;
   className?: string;
-  as?: "div" | "section" | "article" | "header" | "footer" | "li" | "ul";
+  as?: Tag;
 };
 
-const offset = 36;
-
-function buildVariants(
-  direction: Direction,
-  duration: number,
-  delay: number,
-): Variants {
-  const initial: Record<string, number> = { opacity: 0 };
-  if (direction === "up") initial.y = offset;
-  if (direction === "down") initial.y = -offset;
-  if (direction === "left") initial.x = -offset;
-  if (direction === "right") initial.x = offset;
-
-  return {
-    hidden: initial,
-    visible: {
-      opacity: 1,
-      x: 0,
-      y: 0,
-      transition: {
-        duration,
-        delay,
-        ease: [0.22, 1, 0.36, 1],
-      },
-    },
-  };
-}
+const OFFSET = 36;
 
 export function SectionReveal({
   children,
   delay = 0,
-  duration = 0.6,
+  duration = 0.85,
   direction = "up",
   once = true,
   className,
   as = "div",
 }: Props) {
-  const prefersReduced = useReducedMotion();
-  const variants = buildVariants(
-    prefersReduced ? "none" : direction,
-    prefersReduced ? 0 : duration,
-    prefersReduced ? 0 : delay,
-  );
+  const elementRef = useRef<HTMLElement | null>(null);
 
-  const MotionTag = motion[as];
+  useEffect(() => {
+    const el = elementRef.current;
+    if (!el) return;
 
-  return (
-    <MotionTag
-      className={className}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once, amount: 0.2 }}
-      variants={variants}
-    >
-      {children}
-    </MotionTag>
-  );
+    const reduced = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    const fromState: gsap.TweenVars = { opacity: 0 };
+    // Reduced-motion users get a gentle fade without translation, so they
+    // still get a scroll-driven reveal cue instead of an inert page.
+    if (!reduced) {
+      if (direction === "up") fromState.y = OFFSET;
+      if (direction === "down") fromState.y = -OFFSET;
+      if (direction === "left") fromState.x = -OFFSET;
+      if (direction === "right") fromState.x = OFFSET;
+    }
+
+    // Take control of inline styles: this also overrides the .gsap-init-hidden
+    // CSS class that prevents FOUC before JS hydrates.
+    gsap.set(el, fromState);
+
+    const trigger = ScrollTrigger.create({
+      trigger: el,
+      start: "top 88%",
+      once,
+      onEnter: () => {
+        gsap.to(el, {
+          opacity: 1,
+          x: 0,
+          y: 0,
+          duration: reduced ? 0.35 : duration,
+          delay: reduced ? 0 : delay,
+          ease: reduced ? "power1.out" : "power3.out",
+          overwrite: "auto",
+        });
+      },
+      onLeaveBack: once
+        ? undefined
+        : () => {
+            gsap.to(el, {
+              ...fromState,
+              duration: 0.45,
+              ease: "power2.in",
+              overwrite: "auto",
+            });
+          },
+    });
+
+    // ScrollTrigger calculates positions from current layout — if fonts /
+    // images settle later it may miss the initial in-view check, so refresh
+    // once after layout has stabilized.
+    const refreshTimer = window.setTimeout(() => ScrollTrigger.refresh(), 200);
+
+    return () => {
+      window.clearTimeout(refreshTimer);
+      trigger.kill();
+    };
+  }, [delay, duration, direction, once]);
+
+  const combinedClassName = cn("gsap-init-hidden", className);
+  // The element-specific Ref types (HTMLDivElement, HTMLLIElement, ...) are
+  // mutually incompatible, but at runtime our ref always points to some
+  // HTMLElement subtype, so an unknown cast is the safe escape hatch.
+  const refProp = elementRef as unknown as React.Ref<HTMLDivElement>;
+
+  switch (as) {
+    case "section":
+      return (
+        <section ref={refProp as unknown as React.Ref<HTMLElement>} className={combinedClassName}>
+          {children}
+        </section>
+      );
+    case "article":
+      return (
+        <article ref={refProp as unknown as React.Ref<HTMLElement>} className={combinedClassName}>
+          {children}
+        </article>
+      );
+    case "header":
+      return (
+        <header ref={refProp as unknown as React.Ref<HTMLElement>} className={combinedClassName}>
+          {children}
+        </header>
+      );
+    case "footer":
+      return (
+        <footer ref={refProp as unknown as React.Ref<HTMLElement>} className={combinedClassName}>
+          {children}
+        </footer>
+      );
+    case "li":
+      return (
+        <li ref={refProp as unknown as React.Ref<HTMLLIElement>} className={combinedClassName}>
+          {children}
+        </li>
+      );
+    case "ul":
+      return (
+        <ul ref={refProp as unknown as React.Ref<HTMLUListElement>} className={combinedClassName}>
+          {children}
+        </ul>
+      );
+    case "div":
+    default:
+      return (
+        <div ref={refProp} className={combinedClassName}>
+          {children}
+        </div>
+      );
+  }
 }

@@ -8,6 +8,8 @@ import { HtmlLangUpdater } from "@/components/providers/HtmlLangUpdater";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { BackToTop } from "@/components/ui/BackToTop";
+import { AmbientBackground } from "@/components/motion/AmbientBackground";
+import { ScrollProgress } from "@/components/motion/ScrollProgress";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -72,6 +74,8 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       <HtmlLangUpdater />
+      <AmbientBackground />
+      <ScrollProgress />
       <Navbar />
       <main className="flex-1 flex flex-col">{children}</main>
       <Footer />
