@@ -29,7 +29,8 @@
     "techStack": "Công nghệ",
     "includes": "Bao gồm",
     "popular": "Phổ biến nhất",
-    "comingSoon": "Sắp ra mắt"
+    "comingSoon": "Sắp ra mắt",
+    "backToTop": "Lên đầu trang"
   },
   "badges": {
     "available": "Đang nhận dự án",
@@ -47,10 +48,23 @@
   "stats": {
     "title": "Con số biết nói",
     "subtitle": "Niềm tin được xây dựng qua từng dự án",
-    "projects": "Dự án đã triển khai",
-    "specialists": "Chuyên gia senior",
-    "countries": "Quốc gia phục vụ",
-    "response": "Thời gian phản hồi TB"
+    "liveBadge": "Live",
+    "projects": {
+      "label": "Dự án đã triển khai",
+      "sub": "Đã go-live và vận hành thực tế"
+    },
+    "specialists": {
+      "label": "Chuyên gia senior",
+      "sub": "Đội ngũ chuyên gia, không junior"
+    },
+    "countries": {
+      "label": "Quốc gia phục vụ",
+      "sub": "Việt Nam · Hàn Quốc · Hoa Kỳ"
+    },
+    "response": {
+      "label": "Thời gian phản hồi TB",
+      "sub": "Phản hồi trong 1 ngày làm việc"
+    }
   },
   "servicesTeaser": {
     "eyebrow": "Dịch vụ",
@@ -460,14 +474,14 @@
       "eyebrow": "Câu chuyện",
       "title": "Hành trình của chúng tôi",
       "paragraphs": [
-        "Navigin được thành lập năm 2025 bởi một nhóm nhỏ developer và designer từng làm việc cùng nhau tại các công ty công nghệ và agency ở Việt Nam và Hàn Quốc. Sau nhiều năm xây dựng sản phẩm cho người khác, chúng tôi quyết định cùng nhau tạo nên một studio nơi chất lượng được đặt lên trước số lượng.",
-        "Đội ngũ hiện vẫn cố tình giữ ở quy mô nhỏ — mỗi dự án đều nhận được sự chăm sóc trực tiếp từ chuyên gia senior. Đến nay chúng tôi đã đưa 6 sản phẩm lên môi trường thật cho khách hàng tại Việt Nam và Hàn Quốc, từ website doanh nghiệp, nền tảng ERP đến e-commerce và app booking.",
+        "Navigin được thành lập năm 2025 bởi một nhóm nhỏ developer và designer từng làm việc cùng nhau tại các công ty công nghệ và agency ở Việt Nam, Hàn Quốc và Hoa Kỳ. Sau nhiều năm xây dựng sản phẩm cho người khác, chúng tôi quyết định cùng nhau tạo nên một studio nơi chất lượng được đặt lên trước số lượng.",
+        "Đội ngũ hiện vẫn cố tình giữ ở quy mô nhỏ — mỗi dự án đều nhận được sự chăm sóc trực tiếp từ chuyên gia senior. Đến nay chúng tôi đã đưa hơn 20 sản phẩm lên môi trường thật cho khách hàng ở 3 quốc gia, từ website doanh nghiệp, nền tảng ERP đến e-commerce, app booking và SaaS dashboard.",
         "Điều chúng tôi tâm đắc nhất là được đồng hành cùng những founder và team có tầm nhìn — những người dám biến ý tưởng thành hành động. Niềm vui của chúng tôi là biến các ý tưởng đó thành sản phẩm chạy thật, tạo ra giá trị thật."
       ],
       "highlights": {
         "since": "Thành lập năm 2025",
-        "countries": "Khách hàng tại Việt Nam & Hàn Quốc",
-        "projects": "6 sản phẩm đã lên môi trường thật"
+        "countries": "Khách hàng tại Việt Nam, Hàn Quốc & Hoa Kỳ",
+        "projects": "20+ sản phẩm đã lên môi trường thật"
       }
     },
     "skills": {

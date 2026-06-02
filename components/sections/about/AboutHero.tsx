@@ -85,7 +85,7 @@ export function AboutHero() {
                   {[
                     { value: "4", labelKey: "specialists" as const },
                     { value: "2025", labelKey: "since" as const },
-                    { value: "6", labelKey: "projects" as const },
+                    { value: "20+", labelKey: "projects" as const },
                   ].map((stat, i) => (
                     <motion.div
                       key={stat.labelKey}

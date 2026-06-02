@@ -29,7 +29,8 @@
     "techStack": "Tech stack",
     "includes": "Includes",
     "popular": "Most popular",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "backToTop": "Back to top"
   },
   "badges": {
     "available": "Available for projects",
@@ -47,10 +48,23 @@
   "stats": {
     "title": "Numbers that speak",
     "subtitle": "Trust built one project at a time",
-    "projects": "Live projects",
-    "specialists": "Senior specialists",
-    "countries": "Countries served",
-    "response": "Avg. response time"
+    "liveBadge": "Live",
+    "projects": {
+      "label": "Live projects",
+      "sub": "Shipped and running in production"
+    },
+    "specialists": {
+      "label": "Senior specialists",
+      "sub": "Hands-on team, no juniors"
+    },
+    "countries": {
+      "label": "Countries served",
+      "sub": "Vietnam · Korea · United States"
+    },
+    "response": {
+      "label": "Avg. response time",
+      "sub": "Replies within one business day"
+    }
   },
   "servicesTeaser": {
     "eyebrow": "Services",
@@ -460,14 +474,14 @@
       "eyebrow": "Story",
       "title": "Our journey",
       "paragraphs": [
-        "Navigin was founded in 2025 by a small group of developers and designers who'd worked together at tech companies and agencies in Vietnam and Korea. After years of shipping products for others, we decided to start a studio where quality comes before quantity.",
-        "Today the team is intentionally small — every project gets the senior attention it deserves. So far we've shipped six products in production for clients in Vietnam and Korea, from corporate websites and ERP platforms to e-commerce and booking apps.",
+        "Navigin was founded in 2025 by a small group of developers and designers who'd worked together at tech companies and agencies across Vietnam, Korea and the US. After years of shipping products for others, we decided to start a studio where quality comes before quantity.",
+        "Today the team is intentionally small — every project gets the senior attention it deserves. So far we've shipped 20+ products in production for clients in three countries, from corporate websites and ERP platforms to e-commerce, booking apps and SaaS dashboards.",
         "What we love most is partnering with founders and teams who have vision — people who dare to turn ideas into action. Our joy is shaping those ideas into shipped products that drive real value."
       ],
       "highlights": {
         "since": "Founded in 2025",
-        "countries": "Clients in Vietnam & Korea",
-        "projects": "6 live products shipped"
+        "countries": "Clients in Vietnam, Korea & US",
+        "projects": "20+ live products shipped"
       }
     },
     "skills": {

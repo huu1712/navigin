@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing";
 import { HtmlLangUpdater } from "@/components/providers/HtmlLangUpdater";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { BackToTop } from "@/components/ui/BackToTop";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -74,6 +75,7 @@ export default async function LocaleLayout({
       <Navbar />
       <main className="flex-1 flex flex-col">{children}</main>
       <Footer />
+      <BackToTop />
     </NextIntlClientProvider>
   );
 }

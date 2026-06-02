@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -19,6 +19,7 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [lastPath, setLastPath] = useState(pathname);
+  const scrollAfterMobileNavRef = useRef(false);
 
   // Close mobile menu when the route changes (derived-state pattern).
   if (lastPath !== pathname) {
@@ -39,6 +40,43 @@ export function Navbar() {
       document.body.style.overflow = "";
     };
   }, [mobileOpen]);
+
+  useEffect(() => {
+    if (!scrollAfterMobileNavRef.current || mobileOpen) return;
+
+    const prefersReduced = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+    const behavior = prefersReduced ? "auto" : "smooth";
+
+    const scrollToTop = () => {
+      window.scrollTo({ top: 0, left: 0, behavior });
+    };
+
+    // Wait until body overflow is restored, then scroll (same page + after navigation).
+    scrollToTop();
+    const frame = window.requestAnimationFrame(() => {
+      scrollToTop();
+      scrollAfterMobileNavRef.current = false;
+    });
+
+    return () => window.cancelAnimationFrame(frame);
+  }, [pathname, mobileOpen]);
+
+  const handleMobileNavClick =
+    (href: string) => (event: React.MouseEvent<HTMLAnchorElement>) => {
+      const isSamePage =
+        href === "/"
+          ? pathname === "/"
+          : pathname.startsWith(href);
+
+      scrollAfterMobileNavRef.current = true;
+      setMobileOpen(false);
+
+      if (isSamePage) {
+        event.preventDefault();
+      }
+    };
 
   return (
     <header
@@ -143,6 +181,8 @@ export function Navbar() {
                   >
                     <Link
                       href={link.href}
+                      scroll
+                      onClick={handleMobileNavClick(link.href)}
                       className={cn(
                         "flex items-center justify-between rounded-2xl px-4 py-3 text-base font-medium transition-colors",
                         isActive
@@ -165,6 +205,8 @@ export function Navbar() {
               </div>
               <Link
                 href="/contact"
+                scroll
+                onClick={handleMobileNavClick("/contact")}
                 className="mt-2 inline-flex h-11 items-center justify-center rounded-full bg-foreground px-5 text-sm font-medium text-background"
               >
                 {t("hireMe")}
