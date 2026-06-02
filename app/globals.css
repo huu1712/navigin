@@ -147,7 +147,7 @@ button {
     transform: translate3d(0%, 0%, 0) rotate(0deg);
   }
   50% {
-    transform: translate3d(2%, -2%, 0) rotate(2deg);
+    transform: translate3d(1.2%, -1.2%, 0) rotate(0.6deg);
   }
 }
 
@@ -256,7 +256,15 @@ button {
     radial-gradient(at 20% 20%, var(--accent-soft) 0px, transparent 50%),
     radial-gradient(at 80% 30%, var(--accent-2-soft) 0px, transparent 50%),
     radial-gradient(at 50% 80%, var(--accent-soft) 0px, transparent 60%);
-  animation: meshDrift 18s ease-in-out infinite;
+  transform-origin: center center;
+  will-change: transform;
+  animation: meshDrift 22s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-mesh {
+    animation: none;
+  }
 }
 
 /* Hide visually but keep for screen-readers */

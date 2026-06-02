@@ -20,10 +20,10 @@ export function Hero() {
 
   return (
     <section className="relative isolate flex min-h-[100svh] items-center overflow-hidden bg-noise pt-24">
-      {/* Animated mesh background */}
+      {/* Animated mesh background — oversized so rotation/translation never reveals edges */}
       <div
         aria-hidden
-        className="hero-mesh pointer-events-none absolute inset-0 -z-10 opacity-100"
+        className="hero-mesh pointer-events-none absolute -inset-[15%] -z-10"
       />
       {/* Subtle grid overlay */}
       <div
