@@ -2,6 +2,7 @@ import { ChevronRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
 import { SectionReveal } from "@/components/motion/SectionReveal";
+import { ParticlesBackground } from "@/components/ui/ParticlesBackground";
 import { cn } from "@/lib/cn";
 
 type Crumb = {
@@ -41,6 +42,7 @@ export function PageHero({
             "radial-gradient(at 20% 20%, var(--accent-soft) 0px, transparent 50%), radial-gradient(at 80% 30%, var(--accent-2-soft) 0px, transparent 50%)",
         }}
       />
+      <ParticlesBackground className="-z-10" quantity={40} />
 
       <Container size="wide">
         <SectionReveal

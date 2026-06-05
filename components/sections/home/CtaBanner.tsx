@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
 import { SectionReveal } from "@/components/motion/SectionReveal";
+import { ParticlesBackground } from "@/components/ui/ParticlesBackground";
 
 export function CtaBanner() {
   const t = useTranslations("ctaBanner");
@@ -23,6 +24,7 @@ export function CtaBanner() {
               }}
             />
             <div className="absolute inset-0 bg-noise opacity-50" />
+            <ParticlesBackground invert quantity={45} />
 
             <div className="relative flex flex-col items-start gap-6 sm:items-center sm:text-center">
               <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3.5 py-1.5 text-xs font-medium text-white backdrop-blur">

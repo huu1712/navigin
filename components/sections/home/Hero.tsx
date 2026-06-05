@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
+import { ParticlesBackground } from "@/components/ui/ParticlesBackground";
 
 export function Hero() {
   const t = useTranslations("hero");
@@ -35,6 +36,8 @@ export function Hero() {
           backgroundSize: "56px 56px",
         }}
       />
+      {/* Interactive particle network */}
+      <ParticlesBackground className="-z-10" />
 
       <Container size="wide" className="relative z-10 py-16">
         <div className="flex flex-col items-start gap-8 sm:items-center sm:text-center">
