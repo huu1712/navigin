@@ -1,16 +1,43 @@
 "use client";
 
+import { useRef } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, ChevronDown, Sparkles } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
 import { ParticlesBackground } from "@/components/ui/ParticlesBackground";
+import { Magnetic } from "@/components/motion/Magnetic";
+
+gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 export function Hero() {
   const t = useTranslations("hero");
   const prefersReduced = useReducedMotion();
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useGSAP(
+    () => {
+      if (prefersReduced) return;
+      const ctx = { trigger: sectionRef.current, start: "top top", end: "bottom top", scrub: true };
+      gsap.to(".hero-mesh", {
+        yPercent: 18,
+        scale: 1.08,
+        ease: "none",
+        scrollTrigger: { ...ctx },
+      });
+      gsap.to(".hero-grid", {
+        yPercent: 10,
+        ease: "none",
+        scrollTrigger: { ...ctx },
+      });
+    },
+    { scope: sectionRef, dependencies: [prefersReduced] },
+  );
 
   const title = t("title");
   const accent = t("titleAccent");
@@ -20,7 +47,10 @@ export function Hero() {
   const wordsAfter = parts[1]?.trim().split(" ") ?? [];
 
   return (
-    <section className="relative isolate flex min-h-[100svh] items-center overflow-hidden bg-noise pt-24">
+    <section
+      ref={sectionRef}
+      className="relative isolate flex min-h-[100svh] items-center overflow-hidden bg-noise pt-24"
+    >
       {/* Animated mesh background — oversized so rotation/translation never reveals edges */}
       <div
         aria-hidden
@@ -29,7 +59,7 @@ export function Hero() {
       {/* Subtle grid overlay */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)]"
+        className="hero-grid pointer-events-none absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)]"
         style={{
           backgroundImage:
             "linear-gradient(to right, color-mix(in oklab, var(--foreground) 7%, transparent) 1px, transparent 1px), linear-gradient(to bottom, color-mix(in oklab, var(--foreground) 7%, transparent) 1px, transparent 1px)",
@@ -136,23 +166,27 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 1.0 }}
             className="flex flex-col gap-3 sm:flex-row sm:items-center"
           >
-            <Link
-              href="/services"
-              className="btn-gradient group inline-flex h-13 min-h-[3.25rem] items-center justify-center gap-2 rounded-full px-7 text-base font-medium text-white shadow-[0_12px_30px_-10px_var(--accent)] transition-all hover:shadow-[0_18px_36px_-10px_var(--accent)] active:scale-[0.98]"
-            >
-              <Sparkles className="h-4 w-4" strokeWidth={2.5} />
-              {t("ctaPrimary")}
-              <ArrowRight
-                className="h-4 w-4 transition-transform group-hover:translate-x-1"
-                strokeWidth={2.5}
-              />
-            </Link>
-            <Link
-              href="/contact"
-              className="inline-flex h-13 min-h-[3.25rem] items-center justify-center gap-2 rounded-full border border-border-strong bg-surface/80 px-7 text-base font-medium text-foreground backdrop-blur transition-all hover:border-foreground hover:bg-surface active:scale-[0.98]"
-            >
-              {t("ctaSecondary")}
-            </Link>
+            <Magnetic strength={0.5}>
+              <Link
+                href="/services"
+                className="btn-gradient group inline-flex h-13 min-h-[3.25rem] items-center justify-center gap-2 rounded-full px-7 text-base font-medium text-white shadow-[0_12px_30px_-10px_var(--accent)] transition-all hover:shadow-[0_18px_36px_-10px_var(--accent)] active:scale-[0.98]"
+              >
+                <Sparkles className="h-4 w-4" strokeWidth={2.5} />
+                {t("ctaPrimary")}
+                <ArrowRight
+                  className="h-4 w-4 transition-transform group-hover:translate-x-1"
+                  strokeWidth={2.5}
+                />
+              </Link>
+            </Magnetic>
+            <Magnetic strength={0.4}>
+              <Link
+                href="/contact"
+                className="inline-flex h-13 min-h-[3.25rem] items-center justify-center gap-2 rounded-full border border-border-strong bg-surface/80 px-7 text-base font-medium text-foreground backdrop-blur transition-all hover:border-foreground hover:bg-surface active:scale-[0.98]"
+              >
+                {t("ctaSecondary")}
+              </Link>
+            </Magnetic>
           </motion.div>
         </div>
       </Container>

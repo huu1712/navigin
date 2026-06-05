@@ -12,9 +12,11 @@ import { cn } from "@/lib/cn";
 
 type Props = {
   className?: string;
+  /** "inline" renders locales as a segmented control (for clipped containers like the mobile menu). */
+  variant?: "dropdown" | "inline";
 };
 
-export function LanguageSwitcher({ className }: Props) {
+export function LanguageSwitcher({ className, variant = "dropdown" }: Props) {
   const locale = useLocale() as Locale;
   const t = useTranslations("nav");
   const router = useRouter();
@@ -48,6 +50,40 @@ export function LanguageSwitcher({ className }: Props) {
   }
 
   const current = LOCALES.find((l) => l.code === locale) ?? LOCALES[0];
+
+  if (variant === "inline") {
+    return (
+      <div
+        role="group"
+        aria-label={t("language")}
+        className={cn(
+          "inline-flex items-center gap-1 rounded-full border border-border bg-surface p-1",
+          className,
+        )}
+      >
+        {LOCALES.map((l) => {
+          const active = l.code === locale;
+          return (
+            <button
+              key={l.code}
+              type="button"
+              aria-pressed={active}
+              onClick={() => changeLocale(l.code)}
+              className={cn(
+                "inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-medium transition-colors",
+                active
+                  ? "bg-[var(--accent-soft)] text-[color:var(--accent)]"
+                  : "text-foreground-muted hover:bg-surface-2 hover:text-foreground",
+              )}
+            >
+              <span className="text-base leading-none">{l.flag}</span>
+              <span className="font-mono text-xs uppercase">{l.code}</span>
+            </button>
+          );
+        })}
+      </div>
+    );
+  }
 
   return (
     <div ref={ref} className={cn("relative", className)}>

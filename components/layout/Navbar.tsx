@@ -1,7 +1,12 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import {
+  AnimatePresence,
+  motion,
+  useScroll,
+  useSpring,
+} from "framer-motion";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 
@@ -20,6 +25,13 @@ export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [lastPath, setLastPath] = useState(pathname);
   const scrollAfterMobileNavRef = useRef(false);
+
+  const { scrollYProgress } = useScroll();
+  const progress = useSpring(scrollYProgress, {
+    stiffness: 120,
+    damping: 30,
+    restDelta: 0.001,
+  });
 
   // Close mobile menu when the route changes (derived-state pattern).
   if (lastPath !== pathname) {
@@ -157,6 +169,16 @@ export function Navbar() {
         </div>
       </Container>
 
+      <motion.div
+        aria-hidden
+        style={{
+          scaleX: progress,
+          backgroundImage:
+            "linear-gradient(90deg, var(--accent) 0%, var(--accent-2) 50%, var(--accent) 100%)",
+        }}
+        className="absolute top-0 left-0 z-10 h-1 w-full origin-left rounded-full shadow-[0_0_12px_var(--accent)]"
+      />
+
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
@@ -200,7 +222,7 @@ export function Navbar() {
                 );
               })}
               <div className="mt-3 flex items-center justify-between gap-3 border-t border-border pt-4">
-                <LanguageSwitcher />
+                <LanguageSwitcher variant="inline" />
                 <ThemeToggle />
               </div>
               <Link

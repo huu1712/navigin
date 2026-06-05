@@ -5,6 +5,7 @@ import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
 import { SectionReveal } from "@/components/motion/SectionReveal";
 import { ParticlesBackground } from "@/components/ui/ParticlesBackground";
+import { Magnetic } from "@/components/motion/Magnetic";
 
 export function CtaBanner() {
   const t = useTranslations("ctaBanner");
@@ -37,16 +38,18 @@ export function CtaBanner() {
               <p className="max-w-2xl text-base leading-relaxed text-background/75 sm:text-lg">
                 {t("subtitle")}
               </p>
-              <Link
-                href="/contact"
-                className="group inline-flex h-13 min-h-[3.25rem] items-center gap-2 rounded-full bg-background px-7 text-base font-medium text-foreground transition-all hover:gap-3 hover:bg-background/95 active:scale-[0.98]"
-              >
-                {t("button")}
-                <ArrowRight
-                  className="h-4 w-4 transition-transform group-hover:translate-x-1"
-                  strokeWidth={2.5}
-                />
-              </Link>
+              <Magnetic strength={0.5}>
+                <Link
+                  href="/contact"
+                  className="group inline-flex h-13 min-h-[3.25rem] items-center gap-2 rounded-full bg-background px-7 text-base font-medium text-foreground transition-all hover:gap-3 hover:bg-background/95 active:scale-[0.98]"
+                >
+                  {t("button")}
+                  <ArrowRight
+                    className="h-4 w-4 transition-transform group-hover:translate-x-1"
+                    strokeWidth={2.5}
+                  />
+                </Link>
+              </Magnetic>
             </div>
           </div>
         </SectionReveal>
